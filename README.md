@@ -17,6 +17,7 @@ struct stu{
     float score;  //成绩
 } stu1, stu2;
 ```
+*
    * 如果只需要 stu1、stu2 两个变量，后面不需要再使用结构体名定义其他变量，那么在定义时也可以不给出结构体名:
 ```C
 struct{  //没有写 stu
@@ -27,6 +28,7 @@ struct{  //没有写 stu
     float score;  //成绩
 } stu1, stu2;
 ```
+*
    * 结构体指针需要
 ```C
 /*单向链表*/
@@ -37,5 +39,6 @@ struct Student/*建立学生信息结构体模型*/
     struct student *next;/*指向本结构体类型的指针类型*/
 };
 struct Student *pEnd,*pNew;
-pEnd=pNew=(struct Student *)malloc(sizeof(struct Student));/*动态开辟一个学生信息结构体类型大小的空间，使得pEnd和pNew同时指向该结构体空间*/
+pEnd=pNew=(struct Student *)malloc(sizeof(struct Student));
+/*动态开辟一个学生信息结构体类型大小的空间，使得pEnd和pNew同时指向该结构体空间*/
 ```
