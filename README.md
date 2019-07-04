@@ -40,3 +40,8 @@ struct Student *pEnd,*pNew;
 pEnd=pNew=(struct Student *)malloc(sizeof(struct Student));
 /*动态开辟一个学生信息结构体类型大小的空间，使得pEnd和pNew同时指向该结构体空间*/
 ```
+ * * 又遇到一个scanf时需要注意的地方（“&”的使用）：
+ ```C
+scanf("%s",pNew->cName);/*从输入流获取第一个学生姓名*/ 
+scanf("%d",&pNew->iNumber);/*从输入流获取第一个学生学号*/ 
+ ```
